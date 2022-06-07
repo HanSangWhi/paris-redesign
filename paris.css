@@ -763,36 +763,57 @@ label[for] {
   right: 0;
 }
 
+
 /* 섹션 2 */
 
-.section2 {
-  background-color: #163784;
+
+.section2 .section-inner{
+  padding: 50px 0;
 }
 
-.pb-story .title-wrap {
+.section2 .con{
+  position: relative;
+}
+
+.section2 .magazine-list>ul{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section2 .magazine-list>ul>li{
+  flex: 0 1 33.3333%;
+  width: 33.3333%;
+  max-width: 33.3333%;
+}
+
+.section2 .magazine-img-box{
+  flex: 1;
+}
+
+.section2 .magazine-txt-box{
+  flex: 1;
+}
+
+/* 섹션 3 */
+
+.section3{
+  background-color:#163784;
+}
+
+.section3 .title-wrap {
   position: relative;
   text-align: center;
-  height: 100px;
+  color:white;
+  padding-top : 100px;
+  padding-bottom: 50px;
 }
 
-.pb-story .title-wrap>a {
-  position: absolute;
-  top: 20%;
-}
-
-.pb-story .nav-btn {
+.section3 .nav-btn {
   position: relative;
-  height: 100px;
+  color: white;
 }
 
-.pb-story .nav-btn>ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.pb-story .nav-btn>ul {
+.section3 .nav-btn>ul{
   justify-content: center;
 }
 
@@ -805,18 +826,47 @@ label[for] {
   padding: 0 10px;
 }
 
-/* 섹션 3 */
+.section3 .story-list>ul>li{
+  padding:0 5px;
+  width: 25%;
+  max-width: 25%;
+  flex-direction: column;
+  flex: 0 1 25%;
+}
 
-.pb-magazine>.title-wrap {
+.section3 .story-body{
+  margin-top: 80px;
+}
+
+.section3 .list-item{
+  flex: 1;
+  flex-direction: column;
+}
+
+.section3 .story-txt-box{
+  margin-top: 40px;
+  flex:1;
+  word-wrap: break-word;
+  font-size: 10px;
+  color: white;
   text-align: center;
+
 }
 
-.pb-magazine .magazine-wrap .magazine2 {
-  margin-top: 25%;
+.section3 .story-txt-box__title{
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Nanum Gothic";
 }
 
-.pb-magazine .magazine-wrap .magazine4 {
-  margin-top: 25%;
+.section3 .story-txt-box__sub-title{
+  font-size:1.2rem;
+  margin-top: 20px;
+  font-family: "Gowun Dodum";
+}
+
+.section3 .story-txt-box__date{
+  margin-top:15px;
 }
 
 /* 섹션 4 */
