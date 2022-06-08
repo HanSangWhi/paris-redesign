@@ -6,8 +6,8 @@ html {
 /* 노말라이즈 */
 body,
 ul,
-li,
-h1 {
+li
+{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -21,6 +21,10 @@ a {
 label[for] {
   cursor: pointer;
   user-select: none;
+}
+h1, h2, h3, p{
+  margin:0;
+  padding:0;
 }
 
 /* 라이브러리 */
@@ -529,6 +533,10 @@ label[for] {
 
 /* --페이지1 커스텀-- */
 
+.section-inner{
+  padding: 80px 50px;
+}
+
 .section1 .banner-con {
   position: relative;
 }
@@ -589,7 +597,8 @@ label[for] {
 .section1 .txt-box .txt-wrap>.b1 {
   display: flex;
   justify-content: flex-start;
-  margin-top: 3vw;
+  margin-top: 30px;
+  margin-bottom: 20px;
   color: #9A70F3;
 }
 
@@ -597,6 +606,7 @@ label[for] {
   display: flex;
   justify-content: center;
   color: #9A70F3;
+  margin-bottom: 20px;
 }
 
 .section1 .txt-box .txt-wrap>.b3 {
@@ -637,8 +647,13 @@ label[for] {
   background-image: url(img1/slider2-bg.png);
 }
 
+.section1 .slide-2 .txt-img-box-wrap{
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 .section1 .slide-2 .txt-img-box {
-  text-align: center;
+  max-width: 700px;
 }
 
 .section1 .slide-2 .banner-img-box {
@@ -766,6 +781,9 @@ label[for] {
 
 /* 섹션 2 */
 
+.section2{
+  background-color: #fffcf4;
+}
 
 .section2 .section-inner{
   padding: 50px 0;
@@ -775,15 +793,23 @@ label[for] {
   position: relative;
 }
 
+.section2 .magazine-title{
+  margin-top: 40px;
+}
+
+.section2 .magazine-body{
+  margin-top: 180px;
+}
+
 .section2 .magazine-list>ul{
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .section2 .magazine-list>ul>li{
-  flex: 0 1 33.3333%;
-  width: 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 1 33%;
+  width: 33%;
+  max-width: 33%;
 }
 
 .section2 .magazine-img-box{
@@ -792,7 +818,28 @@ label[for] {
 
 .section2 .magazine-txt-box{
   flex: 1;
+  font-size: 10px;
+  position: relative;
+  background-color: #2C2A29;
 }
+
+.section2 .magazine-txt-box__title{
+  position: absolute;
+  top: 0;
+}
+
+.section2 .magazine-txt-box__title2{
+  position: absolute;
+  top: 10%;
+}
+
+.section2 .magazine-txt-box__sub-title{
+  position: absolute;
+  top: 30%;
+}
+
+
+
 
 /* 섹션 3 */
 
@@ -870,8 +917,56 @@ label[for] {
 }
 
 /* 섹션 4 */
-.promotion>.title-wrap {
-  text-align: center;
+
+/* 섹션 5 */
+
+.section5 .promotion-header{
+  margin-bottom:50px;
+}
+
+.section5 .promotion-list>ul{
+  flex-wrap : wrap;
+}
+
+.section5 .promotion-list>ul>li{
+  flex: 0 1 50%;
+  width: 50%;
+  max-width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.section5 .list-item{
+  margin-bottom: 35px;
+}
+
+.section5 .promotion-img-box{
+  flex:1;
+  margin-right: 20px;
+}
+
+.section5 .promotion-txt-box{
+  flex: 1;
+}
+
+.section5 .category{
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.section5 .txt-box__title{
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+
+.section5 .txt-box__sub-title{
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.section5 .txt-box__date{
+  font-size: 5px;
+
 }
 
 /* --풋터시작-- */
@@ -879,9 +974,14 @@ label[for] {
   position: relative;
 }
 
+.footer .footer-inner{
+  padding: 0 50px;
+}
+
 .footer>.footer-wrap>.footer-bg {
   background-color: #767BF0;
   height: 333px;
+  position: relative;
 }
 
 .footer .footer-menu>ul {
@@ -911,3 +1011,4 @@ label[for] {
   font-size: 15px;
   font-family: 'Inconsolata';
 }
+
