@@ -67,3 +67,25 @@ const swiper3 = new Swiper('.sandwich-box .swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+$(document).ready(function(){
+  $(".section3 .taps>li").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+  });
+});
+
+const storySwiper = new Swiper('.section3 .swiper', {  
+});
+
+$(".btn1").on("click", function(){
+  storySwiper.slideTo(0, "1.2s", false);
+})
+
+$(".btn2").on("click", function(){
+  storySwiper.slideTo(1, "1.2s", false);
+})
+
+$(".btn3").on("click", function(){
+  storySwiper.slideTo(2, "1.2s", false);
+})

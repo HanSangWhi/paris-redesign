@@ -6,8 +6,7 @@ html {
 /* 노말라이즈 */
 body,
 ul,
-li
-{
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,9 +21,13 @@ label[for] {
   cursor: pointer;
   user-select: none;
 }
-h1, h2, h3, p{
-  margin:0;
-  padding:0;
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* 라이브러리 */
@@ -532,7 +535,7 @@ h1, h2, h3, p{
 
 /* --페이지1 커스텀-- */
 
-.section-inner{
+.section-inner {
   padding: 80px 50px;
 }
 
@@ -646,7 +649,7 @@ h1, h2, h3, p{
   background-image: url(img1/slider2-bg.png);
 }
 
-.section1 .slide-2 .txt-img-box-wrap{
+.section1 .slide-2 .txt-img-box-wrap {
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -666,13 +669,13 @@ h1, h2, h3, p{
 
 .section1 .slide-2 .txt-box {
   font-size: 10px;
-  padding-top:10px;
+  padding-top: 10px;
   margin-left: 30px;
   width: 100%;
 }
 
-.section1 .slide-2 .txt-box>h1{
-  margin-bottom:10px;
+.section1 .slide-2 .txt-box>h1 {
+  margin-bottom: 10px;
 }
 
 .section1 .slide-2 .con {
@@ -780,59 +783,59 @@ h1, h2, h3, p{
 
 /* 섹션 2 */
 
-.section2{
+.section2 {
   background-color: #fffcf4;
 }
 
-.section2 .section-inner{
+.section2 .section-inner {
   padding: 50px 0;
 }
 
-.section2 .con{
+.section2 .con {
   position: relative;
 }
 
-.section2 .magazine-title{
+.section2 .magazine-title {
   margin-top: 40px;
 }
 
-.section2 .magazine-body{
+.section2 .magazine-body {
   margin-top: 180px;
 }
 
-.section2 .magazine-list>ul{
+.section2 .magazine-list>ul {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.section2 .magazine-list>ul>li{
+.section2 .magazine-list>ul>li {
   flex: 0 1 33%;
   width: 33%;
   max-width: 33%;
 }
 
-.section2 .magazine-img-box{
+.section2 .magazine-img-box {
   flex: 1;
 }
 
-.section2 .magazine-txt-box{
+.section2 .magazine-txt-box {
   flex: 1;
   font-size: 10px;
   position: relative;
   background-color: #2C2A29;
 }
 
-.section2 .magazine-txt-box__title{
+.section2 .magazine-txt-box__title {
   position: absolute;
   top: 0;
 }
 
-.section2 .magazine-txt-box__title2{
+.section2 .magazine-txt-box__title2 {
   position: absolute;
   top: 10%;
 }
 
-.section2 .magazine-txt-box__sub-title{
+.section2 .magazine-txt-box__sub-title {
   position: absolute;
   top: 30%;
 }
@@ -842,28 +845,26 @@ h1, h2, h3, p{
 
 /* 섹션 3 */
 
-.section3{
-  background-color:#163784;
+.section3 {
+  background-color: #163784;
 }
 
-.section3 .title-wrap {
-  position: relative;
-  text-align: center;
-  color:white;
-  padding-top : 100px;
-  padding-bottom: 50px;
+.section3 .pb-story__header {
+  color: white;
+  margin-bottom: 50px;
 }
 
-.section3 .nav-btn {
+.section3 .pb-story__nav-btn {
   position: relative;
   color: white;
+  margin-bottom: 30px;
 }
 
-.section3 .nav-btn>ul{
+.section3 .pb-story__nav-btn>ul {
   justify-content: center;
 }
 
-.pb-story .nav-btn>ul>li {
+.section3 .pb-story__nav-btn>ul>li {
   padding: 10px;
   margin: 0 10px;
 }
@@ -872,110 +873,132 @@ h1, h2, h3, p{
   padding: 0 10px;
 }
 
-.section3 .story-list>ul>li{
-  padding:0 5px;
-  width: 25%;
-  max-width: 25%;
-  flex-direction: column;
-  flex: 0 1 25%;
+
+.section3 .story-list>ul {
+  flex-wrap: wrap;
 }
 
-.section3 .story-body{
-  margin-top: 80px;
+.section3 .story-list>ul>li {
+  flex: 0 1 50%;
+  max-width: 50%;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.section3 .list-item{
+.section3 .list-item {
+  margin-bottom: 35px;
+  background-color: #FFFFFF;
+}
+
+.section3 .story-list .img-box {
   flex: 1;
-  flex-direction: column;
+  margin-right: 20px;
 }
 
-.section3 .story-txt-box{
-  margin-top: 40px;
-  flex:1;
-  word-wrap: break-word;
-  font-size: 10px;
-  color: white;
-  text-align: center;
-
+.section3 .story-list .story-txt-box {
+  flex: 1;
 }
 
-.section3 .story-txt-box__title{
-  font-size: 1.5rem;
+.section3 .story-list{
+  color: black;
+}
+
+
+.section3 .story-txt-box__title {
+  font-size: 1.3rem;
   text-align: center;
   font-family: "Nanum Gothic";
+  margin-top: 10px;
+  color: #4B7BE5;
 }
 
-.section3 .story-txt-box__sub-title{
-  font-size:1.2rem;
+.section3 .story-txt-box__sub-title {
+  font-size: 1.2rem;
   margin-top: 20px;
   font-family: "Gowun Dodum";
 }
 
-.section3 .story-txt-box__date{
-  margin-top:15px;
+.section3 .story-txt-box__date {
+  margin-top: 15px;
+}
+
+.section3 .taps>li {
+  cursor: pointer;
+}
+
+.section3 .taps>li.active {
+  text-decoration: underline;
+}
+
+.section3 .swiper-wrapper>.swiper-slide {
+  transition: 1s;
 }
 
 /* 섹션 4 */
 
-.section4>.swiper{
-  height:100%;
+.section4>.swiper {
+  height: 100%;
 }
 
-.section4 .section4__slide1 .section-inner{
+.section4 .section4__slide1 .section-inner {
   background-color: #FFF2F2;
 }
 
-.section4 .products__header{
+.section4 .products__header {
   margin-top: 40px;
 }
 
-.section4 .swiper-con{
+.section4 .swiper-con {
   width: 100%;
 }
 
-.section4 .bread-box{
+.section4 .bread-box {
   background-color: #F8ECD1;
   border-radius: 10px;
 }
 
-.section4 .bread-box, .cake-box, .sandwich-box{
+.section4 .bread-box,
+.cake-box,
+.sandwich-box {
   padding: 50px 0;
 }
 
-.section4 .swiper-slide{
+.section4 .swiper-slide {
   justify-content: center;
 }
 
-.section4 .img-box{
+.section4 .img-box {
   flex: 1 1 44%;
   width: 44%;
   max-width: 44%;
 }
 
-.section4 .txt-box{
-  flex:1 1 40%;
+.section4 .txt-box {
+  flex: 1 1 40%;
   width: 40%;
   max-width: 40%;
 }
 
-.section4 .products-body .swiper-button-prev{
-  left:0;
+.section4 .products-body .swiper-button-prev {
+  left: 0;
 }
 
-.section4 .swiper-button-next{
+.section4 .swiper-button-next {
   right: 0;
 }
+
 /* 섹션 5 */
 
-.section5 .promotion-header{
-  margin-bottom:50px;
+.section5 .promotion-header {
+  margin-bottom: 50px;
 }
 
-.section5 .promotion-list>ul{
-  flex-wrap : wrap;
+.section5 .promotion-list>ul {
+  flex-wrap: wrap;
 }
 
-.section5 .promotion-list>ul>li{
+.section5 .promotion-list>ul>li {
   flex: 0 1 50%;
   width: 50%;
   max-width: 50%;
@@ -983,35 +1006,35 @@ h1, h2, h3, p{
   box-sizing: border-box;
 }
 
-.section5 .list-item{
+.section5 .list-item {
   margin-bottom: 35px;
 }
 
-.section5 .promotion-img-box{
-  flex:1;
+.section5 .promotion-img-box {
+  flex: 1;
   margin-right: 20px;
 }
 
-.section5 .promotion-txt-box{
+.section5 .promotion-txt-box {
   flex: 1;
 }
 
-.section5 .category{
+.section5 .category {
   margin-bottom: 10px;
   font-size: 13px;
 }
 
-.section5 .txt-box__title{
+.section5 .txt-box__title {
   font-size: 20px;
   margin-bottom: 13px;
 }
 
-.section5 .txt-box__sub-title{
+.section5 .txt-box__sub-title {
   margin-bottom: 15px;
   font-size: 14px;
 }
 
-.section5 .txt-box__date{
+.section5 .txt-box__date {
   font-size: 5px;
 
 }
@@ -1021,7 +1044,7 @@ h1, h2, h3, p{
   position: relative;
 }
 
-.footer .footer-inner{
+.footer .footer-inner {
   padding: 0 50px;
 }
 
@@ -1058,4 +1081,3 @@ h1, h2, h3, p{
   font-size: 15px;
   font-family: 'Inconsolata';
 }
-
