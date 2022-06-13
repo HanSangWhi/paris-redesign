@@ -812,35 +812,65 @@ p {
   flex: 0 1 33%;
   width: 33%;
   max-width: 33%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .section2 .magazine-img-box {
   flex: 1;
+  position: relative;
 }
 
-.section2 .magazine-txt-box {
+.section2 .magazine-txt-box-wrap{
   flex: 1;
   font-size: 10px;
   position: relative;
-  background-color: #2C2A29;
+  color: white;
+  background-color: #163784;
 }
 
-.section2 .magazine-txt-box__title {
+.section2 .magazine-img-box>.btn{
+  border: 1px solid white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: inline-block;
   position: absolute;
-  top: 0;
+  bottom:2%;
+  right: 2%;
+  color: white;
+  cursor:pointer;
 }
 
-.section2 .magazine-txt-box__title2 {
+.section2 .magazine-txt-box{
+  visibility: hidden;
+  opacity: 0;
+  transition:.5s;
+  height: 100%;
+}
+
+.section2 .magazine-txt-box.active{
+  visibility: visible;
+  opacity: 1;
+  transition:.5s;
+}
+
+.section2 .magazine-txt-box>.img-box{
+  height: 100%;
+}
+
+.section2 .magazine-txt-box>.img-box>img{
+  height: 100%;
+}
+
+.section2 .magazine-cover{
+  display:none;
   position: absolute;
-  top: 10%;
+  top:0;
 }
 
-.section2 .magazine-txt-box__sub-title {
-  position: absolute;
-  top: 30%;
+.section2 .magazine-cover.active{
+  display:block;
 }
-
-
 
 
 /* 섹션 3 */

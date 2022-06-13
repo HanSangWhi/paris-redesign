@@ -89,3 +89,64 @@ $(".btn2").on("click", function(){
 $(".btn3").on("click", function(){
   storySwiper.slideTo(2, "1.2s", false);
 })
+
+$(document).ready(function(){
+  $(".section2 .btn1").click(function(){
+    $(".section2 .txt-box1").toggleClass("active");
+    if($(".section2 .txt-box1").hasClass("active")){
+      $(".magazine-cover1").removeClass("active");
+    } else {
+      $(".section2 .txt-box1").removeClass("active");
+      $('.magazine-cover1').addClass("active");
+    }
+  });
+});
+
+
+$(document).ready(function(){
+  $(".section2 .btn2").click(function(){
+    $(".section2 .txt-box2").toggleClass("active");
+    if($(".section2 .txt-box2").hasClass("active")){
+      $(".magazine-cover2").removeClass("active");
+    } else {
+      $(".section2 .txt-box2").removeClass("active");
+      $(".magazine-cover2").addClass("active");
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(".section2 .btn3").click(function(){
+    $(".section2 .txt-box3").toggleClass("active");
+    if($(".section2 .txt-box3").hasClass("active")){
+      $(".magazine-cover3").removeClass("active");
+    } else {
+      $(".section2 .txt-box3").removeClass("active");
+      $(".magazine-cover3").addClass("active");
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(".section2 .btn4").click(function(){
+    $(".section2 .txt-box4").toggleClass("active");
+    if($(".section2 .txt-box4").hasClass("active")){
+      $(".magazine-cover4").removeClass("active");
+    } else {
+      $(".section2 .txt-box4").removeClass("active");
+      $(".magazine-cover4").addClass("active");
+    }
+  });
+});
+
+$(document).ready(function(){
+  $(".section2 .btn5").click(function(){
+    $(".section2 .txt-box5").toggleClass("active");
+    if($(".section2 .txt-box5").hasClass("active")){
+      $(".magazine-cover5").removeClass("active");
+    } else {
+      $(".section2 .txt-box5").removeClass("active");
+      $(".magazine-cover5").addClass("active");
+    }
+  });
+});
