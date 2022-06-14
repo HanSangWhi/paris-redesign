@@ -785,22 +785,24 @@ p {
 
 .section2 {
   background-color: #fffcf4;
-}
-
-.section2 .section-inner {
-  padding: 50px 0;
+  box-sizing: border-box;
 }
 
 .section2 .con {
   position: relative;
 }
 
-.section2 .magazine-title {
-  margin-top: 40px;
+.section2 .magazine-header{
+  margin-bottom: 50px;
 }
 
-.section2 .magazine-body {
-  margin-top: 180px;
+.section2 .magazine-sub-header{
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.section2 .magazine-sub-header>h3{
+  cursor: pointer;
 }
 
 .section2 .magazine-list>ul {
@@ -816,17 +818,26 @@ p {
   box-sizing: border-box;
 }
 
+.section2 .magazine-list>ul>li>div{
+  height: 100%;
+}
+
 .section2 .magazine-img-box {
   flex: 1;
   position: relative;
+}
+
+.section2 .magazine-img-box>img{
+  height: 100%;
 }
 
 .section2 .magazine-txt-box-wrap{
   flex: 1;
   font-size: 10px;
   position: relative;
-  color: white;
-  background-color: #163784;
+  background-color: #FFF8D5;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
 }
 
 .section2 .magazine-img-box>.btn{
@@ -872,7 +883,20 @@ p {
   display:block;
 }
 
+.section2 .magazine-cover>h1{
+  font-family: "Dongle";
+  font-size: 35px;
+  color: #051367;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 
+.section2 .magazine-cover>p{
+  font-family:"Hahmlet";
+  font-size: 15px;
+  font-weight: bold;
+  color: #0E185F;
+}
 /* 섹션 3 */
 
 .section3 {
@@ -882,6 +906,15 @@ p {
 .section3 .pb-story__header {
   color: white;
   margin-bottom: 50px;
+}
+
+.section3 .pb-story__sub-header{
+  justify-content: flex-end;
+}
+
+.section3 .pb-story__sub-header>h3{
+  cursor:pointer;
+  color: white;
 }
 
 .section3 .pb-story__nav-btn {
@@ -936,21 +969,22 @@ p {
 
 
 .section3 .story-txt-box__title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   font-family: "Nanum Gothic";
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   color: #4B7BE5;
 }
 
 .section3 .story-txt-box__sub-title {
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Gowun Dodum";
 }
 
 .section3 .story-txt-box__date {
-  margin-top: 15px;
+  font-size: 10px;
 }
 
 .section3 .taps>li {
@@ -967,16 +1001,21 @@ p {
 
 /* 섹션 4 */
 
-.section4>.swiper {
-  height: 100%;
+.section4{
+  background-color: #FBF8F1;
 }
 
-.section4 .section4__slide1 .section-inner {
-  background-color: #FFF2F2;
+.section4>.swiper {
+  /* height: 100%; */
 }
 
 .section4 .products__header {
-  margin-top: 40px;
+  margin-bottom:50px;
+}
+
+.section4 .products__sub-header{
+  justify-content: flex-end;
+  margin-bottom:30px;
 }
 
 .section4 .swiper-con {
@@ -1002,12 +1041,28 @@ p {
   flex: 1 1 44%;
   width: 44%;
   max-width: 44%;
+  margin-right: 20px;
 }
 
 .section4 .txt-box {
   flex: 1 1 40%;
   width: 40%;
   max-width: 40%;
+}
+
+/* 폰트관련 */
+.section4 .txt-box__title{
+  margin-bottom: 15px;
+}
+
+.section4 .txt-box__title>h1{
+  font-size: 1.3rem;
+  font-family: "Nanum Gothic";
+}
+
+.section4 .txt-box__sub-title>p{
+  font-size:18px;
+  font-family: "Gowun Dodum";
 }
 
 .section4 .products-body .swiper-button-prev {
@@ -1022,6 +1077,15 @@ p {
 
 .section5 .promotion-header {
   margin-bottom: 50px;
+}
+
+.section5 .promotion-sub-header{
+  justify-content: flex-end;
+  margin-bottom:30px;
+}
+
+.section5 .promotion-sub-header>h3{
+  cursor:pointer;
 }
 
 .section5 .promotion-list>ul {
