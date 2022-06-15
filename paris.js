@@ -1,14 +1,13 @@
 // 섹션1
 
-const section1swiper = new Swiper('.section1 .swiper', {
+const section1swiper = new Swiper('.section1>.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop : true,
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  observer : true,
+  observeParents : true,
 
   // Navigation arrows
   navigation: {
@@ -92,37 +91,20 @@ $(document).ready(function () {
 const storySwiper = new Swiper('.section3 .swiper', {
 });
 
-$(".btn1").on("click", function () {
+$(".btn1__1").on("click", function () {
   storySwiper.slideTo(0, "1.2s", false);
 })
 
-$(".btn2").on("click", function () {
+$(".btn1__2").on("click", function () {
   storySwiper.slideTo(1, "1.2s", false);
 })
 
-$(".btn3").on("click", function () {
+$(".btn1__3").on("click", function () {
   storySwiper.slideTo(2, "1.2s", false);
 })
 
 // 섹션4
-
-const section2swiper = new Swiper('.section4>.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  grabCursor: true,
-  centeredSlides: true,
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadow: true,
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+const productswiper = new Swiper('.section4 .pb-products__body>.swiper', {
 });
 
 const swiper1 = new Swiper('.bread-box .swiper', {
@@ -156,4 +138,25 @@ const swiper3 = new Swiper('.sandwich-box .swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+}); 
+
+$(document).ready(function(){
+  $(".section4 .taps>li").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+  });
 });
+
+$(".btn2__1").on("click", function(){
+  productswiper.slideTo(0, "1.2s", false);
+});
+
+$(".btn2__2").on("click", function(){
+  productswiper.slideTo(1, "1.2s", false);
+});
+
+$(".btn2__3").on("click", function(){
+  productswiper.slideTo(2, "1.2s", false);
+});
+
+

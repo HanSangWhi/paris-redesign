@@ -676,6 +676,9 @@ p {
 
 .section1 .slide-2 .txt-box>h1 {
   margin-bottom: 10px;
+  font-size: 35px;
+  font-family: "Sunflower";
+  color: #0E185F;
 }
 
 .section1 .slide-2 .con {
@@ -744,6 +747,11 @@ p {
   background-color: #F9A5A5;
 }
 
+/* .section1 .slide-4 .banner-img-cover{
+  width: 50%;
+  height: 100%;
+} */
+
 .section1 .slide-4 .banner-img-box {
   max-width: 600px;
   width: 47%;
@@ -778,6 +786,7 @@ p {
   border-radius: 5px;
   position: absolute;
   right: 0;
+  padding: 0 10px;
 }
 
 
@@ -930,12 +939,8 @@ p {
 .section3 .pb-story__nav-btn>ul>li {
   padding: 10px;
   margin: 0 10px;
+  cursor: pointer;
 }
-
-.pb-story .nav-btn>ul>li>a {
-  padding: 0 10px;
-}
-
 
 .section3 .story-list>ul {
   flex-wrap: wrap;
@@ -1009,13 +1014,37 @@ p {
   /* height: 100%; */
 }
 
-.section4 .products__header {
+.section4 .pb-products__header {
   margin-bottom:50px;
 }
 
-.section4 .products__sub-header{
+.section4 .pb-products__sub-header{
   justify-content: flex-end;
+}
+
+.section4 .pb-products__nav-btn{
   margin-bottom:30px;
+}
+
+.section4 .pb-products__nav-btn>ul{
+  justify-content: center;
+}
+
+.section4 .pb-products__nav-btn>ul>li{
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+
+.section4 .products__header{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.products__sub-header{
+  justify-content: flex-end;
 }
 
 .section4 .swiper-con {
@@ -1023,7 +1052,6 @@ p {
 }
 
 .section4 .bread-box {
-  background-color: #F8ECD1;
   border-radius: 10px;
 }
 
@@ -1035,6 +1063,12 @@ p {
 
 .section4 .swiper-slide {
   justify-content: center;
+}
+
+
+
+.section4 .taps>li.active{
+  text-decoration: underline;
 }
 
 .section4 .img-box {
@@ -1175,3 +1209,9 @@ p {
   font-size: 15px;
   font-family: 'Inconsolata';
 }
+
+/* 반응형 */
+/* break point
+$tablet : 768px;
+$laptop : 1020px;
+$desktop :1400px; */
