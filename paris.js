@@ -88,7 +88,7 @@ $(document).ready(function () {
   });
 });
 
-const storySwiper = new Swiper('.section3 .swiper', {
+const storySwiper = new Swiper('.section3 .pb-story__body .swiper', {
 });
 
 $(".btn1__1").on("click", function () {
