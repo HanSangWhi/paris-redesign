@@ -109,36 +109,51 @@ const productswiper = new Swiper('.section4 .pb-products__body>.swiper', {
 
 const swiper1 = new Swiper('.bread-box .swiper', {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 0,
   // 화살표
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    1023: {
+      slidesPerView:2,
+    },
+  }
 });
 
 const swiper2 = new Swiper('.cake-box .swiper', {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 0,
   // 화살표
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints:{
+    1023:{
+      slidesPerView:2,
+    },
+  }
 });
 
 const swiper3 = new Swiper('.sandwich-box .swiper', {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 0,
   // 화살표
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-}); 
+  breakpoints:{
+    1023:{
+      slidesPerView:2,
+    },
+  }
+});
 
 $(document).ready(function(){
   $(".section4 .taps>li").click(function(){
