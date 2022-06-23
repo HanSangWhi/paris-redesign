@@ -151,7 +151,7 @@ const swiper3 = new Swiper('.sandwich-box .swiper', {
   breakpoints:{
     1023:{
       slidesPerView:2,
-    },
+    }
   }
 });
 

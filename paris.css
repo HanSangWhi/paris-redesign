@@ -852,8 +852,8 @@ p {
 }
 
 .section2 .magazine-img-box>.btn {
-  border: 1px solid white;
-  padding: 5px 8px;
+  border: 2px solid white;
+  padding: 5px 10px;
   border-radius: 5px;
   display: inline-block;
   position: absolute;
@@ -861,6 +861,11 @@ p {
   right: 2%;
   color: white;
   cursor: pointer;
+  transition: .6s;
+}
+
+.section2 .magazine-img-box>.btn:hover{
+  background-color: #007aff;
 }
 
 .section2 .magazine-txt-box {
@@ -975,7 +980,6 @@ p {
   color: black;
 }
 
-
 .section3 .story-txt-box__title {
   font-size: 1.2rem;
   text-align: center;
@@ -1025,6 +1029,10 @@ p {
   justify-content: flex-end;
 }
 
+.section4 .pb-products__sub-header>h3{
+  cursor: pointer;
+}
+
 .section4 .pb-products__nav-btn {
   margin-bottom: 30px;
 }
@@ -1054,21 +1062,73 @@ p {
   width: 100%;
 }
 
-.section4 .bread-box {
-  border-radius: 10px;
-}
-
 .section4 .bread-box,
 .cake-box,
 .sandwich-box {
   padding: 50px 0;
+  position: relative;
+}
+
+/* 브레드박스 버튼 */
+.section4 .bread-box> .swiper-button-prev{
+  top: 0;
+  left: 40%;
+} 
+
+.section4 .bread-box> .swiper-button-next{
+  top:0;
+  right: 40%;
+}
+
+/* 케이크박스 버튼 */
+.section4 .cake-box> .swiper-button-prev{
+  top: 0;
+  left: 40%;
+}
+
+.section4 .cake-box> .swiper-button-next{
+  top:0;
+  right: 40%;
+}
+
+/* 샌드위치&샐러드 버튼 */
+.section4 .sandwich-box .swiper-button-prev{
+  top: 0;
+  left: 40%;
+}
+
+.section4 .sandwich-box> .swiper-button-next{
+  top:0;
+  right: 40%;
+}
+
+.section4 .bread-box>.swiper-button-prev::after{
+  display:none;
+}
+
+.section4 .bread-box>.swiper-button-next::after{
+  display:none;
+}
+
+.section4 .cake-box>.swiper-button-prev::after{
+  display:none;
+}
+
+.section4 .cake-box>.swiper-button-next::after{
+  display:none;
+}
+
+.section4 .sandwich-box>.swiper-button-prev::after{
+  display:none;
+}
+
+.section4 .sandwich-box>.swiper-button-next::after{
+  display:none;
 }
 
 .section4 .swiper-slide {
   justify-content: center;
 }
-
-
 
 .section4 .taps>li.active {
   text-decoration: underline;
@@ -1087,6 +1147,7 @@ p {
   max-width: 40%;
 }
 
+
 /* 폰트관련 */
 .section4 .txt-box__title {
   margin-bottom: 15px;
@@ -1099,15 +1160,7 @@ p {
 
 .section4 .txt-box__sub-title>p {
   font-size: 18px;
-  font-family: "Gowun Dodum";
-}
-
-.section4 .products-body .swiper-button-prev {
-  left: 0;
-}
-
-.section4 .swiper-button-next {
-  right: 0;
+  font-family: "Sunflower";
 }
 
 /* 섹션 5 */
