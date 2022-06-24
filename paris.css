@@ -1273,7 +1273,12 @@ $laptop : 1020px;
 $desktop :1400px; */
 
 /* 탑메뉴 */
-@media(max-width: 850px){
+@media(max-width: 880px){
+  .top-bar{
+    height: 150px;
+    position:static;
+  }
+
   .top-bar>.con .brand>a{
     font-size: 30px;
   }
@@ -1283,6 +1288,11 @@ $desktop :1400px; */
   .top-bar .login{
     font-size: 13px;
   }
+}
+
+/* 모바일 */
+@media(max-width: 767px){
+  
 }
 
 
@@ -1313,6 +1323,12 @@ $desktop :1400px; */
 }
 
 @media(max-width: 880px){
+  .section1{
+    max-height: 700px;
+  }
+  .section1 .slide-2 .txt-box{
+    margin-left: 5px;
+  }
   .section1 .slide-2 .txt-box>h1{
     font-size: 20px;
   }
