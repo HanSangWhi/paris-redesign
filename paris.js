@@ -3,7 +3,6 @@
 const section1swiper = new Swiper('.section1>.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop : true,
 
   // If we need pagination
   observer : true,
@@ -15,6 +14,18 @@ const section1swiper = new Swiper('.section1>.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+// 팝업 관련
+
+function popup__init(no){
+  $('.section1 .popup__btn-open .btn' + no).click(function(){
+    $('.section1 .popup' + no).addClass('active');
+  });
+  $('.section1 .popup' + no + ' .popup__btn-close').click(function(){
+    $('.section1 .popup' + no).removeClass('active');
+  })
+}
+popup__init(1);
 
 // 섹션2
 
