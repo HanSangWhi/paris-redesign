@@ -15,9 +15,26 @@ const section1swiper = new Swiper('.section1>.swiper', {
   },
 });
 
+// 로그인, 회원가입 팝업 관련
+
+function popup__init1(no){
+  $('.btn-popup-' + no).click(function(){
+    $('.popup-' + no).addClass('active');
+  });
+  $('.popup-' + no + ' .popup__btn-close, .popup-' + no).click(function(){
+    $('.popup-' + no).removeClass('active');
+  });
+  $('.popup-' + no + ' .popup__content').click(function(){
+    return false;
+  });
+}
+
+popup__init1(1);
+popup__init1(2);
+
 // 팝업 관련
 
-function popup__init(no){
+function popup__init2(no){
   $('.section1 .popup__btn-open .btn' + no).click(function(){
     $('.section1 .popup' + no).addClass('active');
   });
@@ -25,7 +42,7 @@ function popup__init(no){
     $('.section1 .popup' + no).removeClass('active');
   })
 }
-popup__init(1);
+popup__init2(1);
 
 // 섹션2
 
