@@ -44,6 +44,33 @@ function popup__init2(no){
 }
 popup__init2(1);
 
+// 사이드바 관련
+
+// 사이드바 작동관련
+function side_bar__init(){
+  $('.top-bar .icon-1').click(function(){
+    $('.side-bar').addClass('active');
+    $('.side-bar__wrap').addClass('active');
+  });
+  $('.side-bar__close-btn').click(function(){
+    $('.side-bar').removeClass("active");
+    $('.side-bar__wrap').removeClass('active');
+  });
+}
+side_bar__init();
+
+// ul,li 관련
+function side_bar_ul__init(){
+  $('.side-bar>ul>li').click(function(){
+    if($(this).hasClass("active")){
+      $(this).removeClass('active');
+    }else{
+      $('.side-bar>ul>li').removeClass("active");
+      $(this).addClass("active");
+    }
+  })
+}
+side_bar_ul__init();
 // 섹션2
 
 $(document).ready(function () {
