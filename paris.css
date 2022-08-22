@@ -498,7 +498,7 @@ p {
   opacity:0;
   visibility:hidden;
   transition: opacity .5s, visibility .5s;
-  z-index: 99;
+  z-index: 100;
 }
 
 .side-bar__wrap.active{
@@ -512,14 +512,15 @@ p {
   /* background-color:rgba(0,0,0,.5); */
   background-color: #1e52ba;
   width: 200px;
-  z-index: 99;
+  z-index: 100;
   right:-200px;
   transition: right .5s;
 }
 
 .side-bar.active{
   right:0;
-  transition: right 1s
+  transition: right 1s;
+  z-index: 100;
 }
 
 .side-bar>ul{
@@ -1184,6 +1185,10 @@ p {
   margin-bottom: 50px;
 }
 
+.section2 .magazine-title{
+  font-family: "Gowun Dodum";
+}
+
 .section2 .magazine-sub-header {
   justify-content: flex-end;
   margin-bottom: 30px;
@@ -1325,8 +1330,13 @@ p {
   margin-bottom: 50px;
 }
 
+.section3 .pb-story__title{
+  font-family: "Gowun Dodum";
+}
+
 .section3 .pb-story__sub-header {
   justify-content: flex-end;
+  margin-bottom:30px;
 }
 
 .section3 .pb-story__sub-header>h3 {
@@ -1348,6 +1358,7 @@ p {
   padding: 10px;
   margin: 0 10px;
   cursor: pointer;
+  text-align: center;
 }
 
 .section3 .story-list>ul {
@@ -1397,6 +1408,7 @@ p {
 
 .section3 .story-txt-box__date {
   font-size: 10px;
+  margin-bottom: 10px;
 }
 
 .section3 .taps>li {
@@ -1414,7 +1426,7 @@ p {
 /* 섹션 4 */
 
 .section4 {
-  background-color: #FBF8F1;
+  background-color: #fffcf4;
 }
 
 .section4>.swiper {
@@ -1425,8 +1437,13 @@ p {
   margin-bottom: 50px;
 }
 
+.section4 .pb-products__title{
+  font-family: "Gowun Dodum";
+}
+
 .section4 .pb-products__sub-header {
   justify-content: flex-end;
+  margin-bottom:30px;
 }
 
 .section4 .pb-products__sub-header>h3 {
@@ -1445,6 +1462,7 @@ p {
   padding: 10px;
   margin: 0 10px;
   cursor: pointer;
+  text-align: center;
 }
 
 
@@ -1452,10 +1470,7 @@ p {
   margin-top: 30px;
   margin-bottom: 30px;
   justify-content: center;
-}
-
-.products__sub-header {
-  justify-content: flex-end;
+  font-family: "Gowun Dodum";
 }
 
 .section4 .swiper-con {
@@ -1555,18 +1570,23 @@ p {
 
 .section4 .txt-box__title>h1 {
   font-size: 1.3rem;
-  font-family: "Nanum Gothic";
+  font-family: "Gowun Dodum";
 }
 
 .section4 .txt-box__sub-title>p {
   font-size: 18px;
-  font-family: "Sunflower";
+  font-family: "Hahmlet";
+  font-weight: bold;
 }
 
 /* 섹션 5 */
 
 .section5 .promotion-header {
   margin-bottom: 50px;
+}
+
+.section5 .promotion-title{
+  font-family: "Gowun Dodum";
 }
 
 .section5 .promotion-sub-header {
@@ -1626,16 +1646,12 @@ p {
 /* --풋터시작-- */
 .footer {
   position: relative;
+  height: 100%;
+  background-color: #767BF0;
 }
 
 .footer .footer-inner {
   padding: 0 50px;
-}
-
-.footer>.footer-wrap>.footer-bg {
-  background-color: #767BF0;
-  height: 333px;
-  position: relative;
 }
 
 .footer .footer-menu>ul {
@@ -1657,6 +1673,7 @@ p {
 
 .footer .footer-menu>ul ul {
   margin-top: 35px;
+  margin-bottom: 65px;
 }
 
 .footer .footer-menu ul ul>li>a {
@@ -1677,7 +1694,6 @@ $desktop :1400px; */
 @media(min-width: 768px){
   .side-bar{
     display:none;
-
   }
 }
   
@@ -1686,7 +1702,6 @@ $desktop :1400px; */
 @media(max-width: 960px) {
   .top-bar {
     height: 160px;
-    position: static;
   }
 
   .top-bar>.con .brand>a {
@@ -1718,10 +1733,10 @@ $desktop :1400px; */
 }
 
 /* --섹션 1-- */
-/* 섹션1-슬라이드 2,3,4 */
+/* 섹션1-슬라이드 2 */
 @media(max-width: 960px){
-  .section1 .slide-2 .banner-con, .section1 .slide-3 .banner-con, .section1 .slide-4 .banner-con{
-    height: 600px;
+  .section1 .slide-2 .banner-con{
+    /* height: 600px; */
   }
 }
 
@@ -1755,7 +1770,7 @@ $desktop :1400px; */
 
 @media(max-width: 960px) {
   .section1 {
-    height: 100%;
+    /* height: 100%; */
   }
   .section1 .slide-1 .banner-wrap1{
     padding-top: 50px;
@@ -1801,10 +1816,6 @@ $desktop :1400px; */
 }
 
 @media(max-width: 880px) {
-  .section1 {
-    max-height: 700px;
-  }
-
   .section1 .slide-2 .txt-box {
     margin-left: 5px;
   }
@@ -1815,6 +1826,10 @@ $desktop :1400px; */
 }
 
 @media(max-width: 767px) {
+  .section1 {
+    max-height: 900px;
+  }
+
   .section1 .slide-2 .txt-box {
     margin-bottom: 0;
     margin-top: 10px;
@@ -1993,11 +2008,91 @@ $desktop :1400px; */
   }
 }
 
+@media(max-width: 600px){
+  .section3 .list-item{
+    flex-direction: column;
+  }
+  .section3 .story-list .img-box{
+    margin-right:0;
+  }
+  .section3 .story-list .story-txt-box{
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+  }
+  .section3 .story-txt-box__sub-title{
+    margin-bottom:10px;
+  }
+  .section3 .list-item{
+    background-color: transparent;
+  }
+  .section3 .pb-story__nav-btn>ul>li{
+    font-size:13px;
+  }
+  .section3 .pb-story__sub-header{
+    display:none;
+  }
+}
+
 /* --섹션 4--*/
 /* 태블릿 */
 @media(max-width: 1023px) {
   .section4 {
     height: 100%;
+  }
+}
+
+@media(max-width: 600px){
+  .section4 .pb-products__nav-btn>ul>li{
+    font-size: 13px;
+  }
+  .section4 .pb-products__sub-header{
+    display:none;
+  }
+  .section4 .products__header{
+    margin-top:0;
+  }
+  .section4 .swiper-slide{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section4 .img-box{
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 70%;
+    margin-right:0;
+  }
+  .section4 .txt-box{
+    width: 100%;
+    max-width:100%;
+    flex: 1 1 100%;
+  }
+  .section4 .txt-box__title{
+    margin-top: 15px;
+  }
+  .section4 .txt-box__title>h1{
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .section4 .products__title{
+    font-size: 13px;
+  }
+  .section4 .bread-box>.swiper-button-prev{
+    left:20%;
+  }
+  .section4 .bread-box>.swiper-button-next{
+    right:20%;
+  }
+  .section4 .cake-box>.swiper-button-prev{
+    left:20%;
+  }
+  .section4 .cake-box>.swiper-button-next{
+    right:20%;
+  }
+  .section4 .sandwich-box>.swiper-button-prev{
+    left:20%;
+  }
+  .section4 .sandwich-box>.swiper-button-next{
+    right:20%;
   }
 }
 
@@ -2012,6 +2107,56 @@ $desktop :1400px; */
     flex: 0 1 100%;
     width: 100%;
     max-width: 100%;
+  }
+  .section5 .category{
+    margin-top: 15px;
+  }
+  .section5 .txt-box__title{
+    font-family: "Hahmlet";
+  }
+  .section5 .txt-box__sub-title{
+    font-family: "Hahmlet";
+    font-weight: bold;
+  }
+  .section5 .promotion-sub-header{
+    display:none;
+  }
+}
+
+@media(max-width: 600px){
+  .section5 .list-item{
+    flex-direction: column;
+  }
+  .section5 .promotion-img-box{
+    margin-right:0;
+  }
+}
+
+/* 푸터반응형 */
+@media(max-width: 600px){
+  .footer{
+    /* height: 100%; */
+  }
+  .footer-menu{
+    flex-direction: column;
+  }
+  .footer .footer-menu>ul{
+    margin-top:20px;
+    margin-right:0;
+  }
+  .footer .footer-menu>ul:nth-child(3){
+    margin-bottom:20px;
+  }
+  .footer .footer-menu>ul>li>a{
+    margin-top:0;
+    padding:5px 0;
+  }
+  .footer .footer-menu>ul ul{
+    display:flex;
+    flex-direction: column;
+    margin-top:15px;
+    margin-left: 20px;
+    margin-bottom:0;
   }
 }
 
@@ -2058,7 +2203,6 @@ $desktop :1400px; */
     color: white;
     font-size: 30px;
   }
-
 }
 
 @media(min-width: 768px){
